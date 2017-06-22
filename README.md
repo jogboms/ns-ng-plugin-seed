@@ -6,7 +6,9 @@
   * Create new instance of Git
   * Replace every instance of `ns-ng-plugin-seed` in `package.json` and `src/package`.
   * Then `npm run setup` 
-  * And finally, `npm publish`
+  * After changes
+  * `git add .` & `git commit -m "Initial Commit"`
+  * And finally, `npm run version-and-push`
 
 ## License
 
