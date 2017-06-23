@@ -1,6 +1,6 @@
 {
   "name": "ns-ng-plugin-seed",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A minimal Nativescript + Angular plugin seed",
   "main": "index",
   "typings": "index.d.ts",
