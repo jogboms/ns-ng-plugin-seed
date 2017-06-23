@@ -8,7 +8,7 @@
   * Then `npm run setup` 
   * After changes
   * `git add .` & `git commit -m "Initial Commit"`
-  * And finally, `npm run version-and-push`
+  * And finally, `npm run push-pub`
 
 ## License
 

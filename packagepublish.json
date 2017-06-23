@@ -1,0 +1,41 @@
+{
+  "name": "ns-ng-plugin-seed",
+  "version": "0.0.3",
+  "description": "A minimal Nativescript + Angular plugin seed",
+  "main": "index",
+  "typings": "index.d.ts",
+	"nativescript": {
+		"platforms": {
+			"android": "3.0.1",
+      "ios": "3.0.1"
+		}
+	},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jogboms/ns-ng-plugin-seed.git"
+  },
+  "keywords": [
+    "angular",
+    "angular2",
+    "ng2",
+    "ngx",
+    "ns",
+    "plugin",
+    "kickstart",
+    "seed",
+    "project",
+    "nativescript"
+  ],
+  "author": "Jeremiah Ogbomo <jeremiahogbomo@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jogboms/ns-ng-plugin-seed/issues"
+  },
+  "homepage": "https://github.com/jogboms/ns-ng-plugin-seed#readme",
+  "scripts": {
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+  }
+}
