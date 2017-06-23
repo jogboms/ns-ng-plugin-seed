@@ -1,6 +1,6 @@
 {
   "name": "ns-ng-plugin-seed",
-  "version": "0.0.4",
+  "version": "0.0.3",
   "description": "A minimal Nativescript + Angular plugin seed",
   "license": "MIT",
   "readme": "README.md",
@@ -37,10 +37,12 @@
     "build": "ngc && npm run tsc",
     "clean": "rm -rf src/platforms",
     "prebuild": "npm i && cd src && npm i",
-    "preparedemo": "npm run build; cd src; tns plugin remove ns-ngrx-debugger; tns plugin add ..; tns install",
+    "preparedemo": "npm run build; cd src; tns plugin remove ns-ng-plugin-seed; tns plugin add ..; tns install",
     "tsc": "tsc -p .",
-    "prepare": "cp package.json packagedev.json && mv packagepublish.json package.json",
-    "complete": "mv package.json packagepublish.json && mv packagedev.json package.json",
+    "preprepare": "mv package.json package-dev.json",
+    "prepare": "mv packagepublish.json package.json",
+    "precomplete": "mv package.json packagepublish.json",
+    "complete": "mv package-dev.json package.json",
     "push-pub": "git push origin && git push origin --tags && npm run prepare && npm publish && npm run complete",
     "setup": "npm run build"
   },

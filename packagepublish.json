@@ -1,6 +1,6 @@
 {
   "name": "ns-ng-plugin-seed",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A minimal Nativescript + Angular plugin seed",
   "main": "index",
   "typings": "index.d.ts",
@@ -33,6 +33,15 @@
   },
   "homepage": "https://github.com/jogboms/ns-ng-plugin-seed#readme",
   "scripts": {
+    "build": "ngc && npm run tsc",
+    "clean": "rm -rf src/platforms",
+    "prebuild": "npm i && cd src && npm i",
+    "preparedemo": "npm run build; cd src; tns plugin remove ns-ngrx-debugger; tns plugin add ..; tns install",
+    "tsc": "tsc -p .",
+    "prepare": "cp package.json packagedev.json && mv packagepublish.json package.json",
+    "complete": "mv package.json packagepublish.json && mv packagedev.json package.json",
+    "push-pub": "git push origin && git push origin --tags && npm run prepare && npm publish && npm run complete",
+    "setup": "npm run build"
   },
   "dependencies": {
   },
